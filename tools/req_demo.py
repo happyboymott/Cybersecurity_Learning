@@ -1,6 +1,6 @@
 import requests
 
-url = "http://192.168.2.23/index.php"
+url = "http://10.199.52.112/index.php"
 
 headers = {
 'User-Agent' : 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0' }
@@ -16,7 +16,8 @@ par = {
 }
 
 proxie = {
-    "http" : "127.0.0.1:8080"
+    "http" : "127.0.0.1:8080",
+    "https" : "127.0.0.1:8080"
 }
 
 
