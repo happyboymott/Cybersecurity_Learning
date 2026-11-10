@@ -1,32 +1,35 @@
 import requests
 
-url1 = "https://www.aliyun.com"
-
-url2 = "https://fecs.console.aliyun.com/data/api.json"
+url = "http://192.168.2.23/index.php"
 
 headers = {
-'User-Agent' : 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36' }
+'User-Agent' : 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36 Edg/157.0.0.0' }
 
 data1 = {
-    "product" : "aliyun_aiassistant",
-    "action" : "ListSession",
+    "username" : "admin",
+    "password" : "1111",
+    "login" : "login"
 }
 
 par = {
-    "fetcher": "aliyun_aiassistant__ListSession"
+    "login": "true"
+}
+
+proxie = {
+    "http" : "127.0.0.1:8080"
 }
 
 
 def getsend():
-    r = requests.get(url1,headers=headers)
+    r = requests.get(url,headers=headers,proxies=proxie)
     print(r.content)
 
 def postsendform():
-    r = requests.post(url2,headers=headers,params=par,data=data1)
+    r = requests.post(url,headers=headers,params=par,data=data1,proxies=proxie)
     print(r.content)
 
 def postsendjson():
-    r = requests.post(url2,headers=headers,params=par,json=data1)
+    r = requests.post(url,headers=headers,params=par,json=data1,proxies=proxie)
     print(r.content)
 
 if __name__ == "__main__":

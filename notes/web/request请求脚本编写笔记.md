@@ -1,0 +1,1 @@
+编写python的requests库测试脚本，尝试了headers设置，get请求，post的form与json格式请求，其中post请求中json提交时为json结构化数据，支持嵌套和数组，用from则作为传统数据提交，型如xxx&xxx,值会进行url编码，同时不支持嵌套和数组
