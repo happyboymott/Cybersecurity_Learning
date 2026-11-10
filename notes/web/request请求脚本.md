@@ -1,0 +1,1 @@
+编写python的requests库测试脚本，尝试了headers设置，get请求，post的表单与json格式请求
