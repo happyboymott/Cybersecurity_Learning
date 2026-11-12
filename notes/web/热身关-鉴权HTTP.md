@@ -1,6 +1,7 @@
 # 热身关-HTTP/鉴权
 
-## 目标：巩固鉴权失效与访问控制失效的相关知识
+## 目标：
+巩固鉴权失效与访问控制失效的相关知识
 
 ## 环境:
 PortSwigger Web Security Academy的靶场，难度统一为APPRENTICE,全过程通过bp进行抓包
