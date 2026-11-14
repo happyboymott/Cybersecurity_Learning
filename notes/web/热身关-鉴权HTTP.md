@@ -34,8 +34,6 @@ Username enumeration via different responses(APPRENTICE难度)
 
 ![intruder模块中密码待爆破的数据包](../images/屏幕截图%202026-11-11%20195203.png)
 
-![密码payload导入](../images/屏幕截图%202026-11-11%20195203.png)
-
 7.密码爆破成功，其中一个结果响应码为302，长度明显偏短，猜测此前的用户名结合本次爆破的密码即为正确登录信息
 
 ![密码爆破结果界面](../images/屏幕截图%202026-11-11%20195242.png)
@@ -74,7 +72,7 @@ Username enumeration via different responses(APPRENTICE难度)
 
 ![抓取到carlos的2FA验证数据包](../images/屏幕截图%202026-11-11%20164537.png)
 
-5.根据此前保存的winner用户的已登录数据包进行修改，将id参数改为carlos，cookie信息同步替换上一步为保存的carlos的cookie信息
+5.根据此前保存的wiener用户的已登录数据包进行修改，将id参数改为carlos，cookie信息同步替换上一步为保存的carlos的cookie信息
 
 ![成功登录的bp预览界面](../images/屏幕截图%202026-11-11%20164709.png)
 
