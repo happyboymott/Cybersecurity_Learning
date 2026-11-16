@@ -10,21 +10,21 @@
 
 ## 步骤:
 
-1.进入Ghidra工具界面后打开CodeBrowser交互界面，并导入编译好的文件factorial_symbols.exe
+1. 进入Ghidra工具界面后打开CodeBrowser交互界面，并导入编译好的文件factorial_symbols.exe
 
 ![Ghidra的主界面](../images/屏幕截图%202026-11-12%20193758.png)
 
 ![选定待逆向程序界面](../images/屏幕截图%202026-11-12%20195045.png)
 
-2.导入后进行分析，选择默认分析
+2. 导入后进行分析，选择默认分析
 
 ![Ghidra工具询问是否进行分析](../images/屏幕截图%202026-11-12%20195055.png)
 
-3.分析完成后便可以看到常用的四个功能模块Listing(反汇编),Decompile(反编译伪代码),Symbol Tree(函数列表),以及Defined Strings(从windows菜单调出)
+3. 分析完成后便可以看到常用的四个功能模块Listing(反汇编),Decompile(反编译伪代码),Symbol Tree(函数列表),以及Defined Strings(从windows菜单调出)
 
 ![Codebrowser主要功能界面](../images/屏幕截图%202026-11-12%20195442.png)
 
-4.使用Symbol Tree功能中选择Functions栏定位main函数与factorial函数,并结合源代码读通伪代码
+4. 使用Symbol Tree功能中选择Functions栏定位main函数与factorial函数,并结合源代码读通伪代码
 
 ![main函数位置](../images/屏幕截图%202026-11-12%20202040.png)
 
@@ -32,7 +32,7 @@
 
 ![结合源码阅读伪代码](../images/屏幕截图%202026-11-12%20204417.png)
 
-5.进一步熟悉基本的操作，L键改写main函数名为mainre，;键为主函数入口添加备注，右键选择references查看xref信息，G键跳转地址
+5. 进一步熟悉基本的操作，L键改写main函数名为mainre，;键为主函数入口添加备注，右键选择references查看xref信息，G键跳转地址
 
 ![修改后的主函数名字改变](../images/屏幕截图%202026-11-12%20205953.png)
 
@@ -42,13 +42,13 @@
 
 ![跳转地址功能图片](../images/屏幕截图%202026-11-12%20210234.png)
 
-6.根据Defined Strings功能通过"out of range"字符串的xref信息找到对应的判断输入的功能代码
+6. 根据Defined Strings功能通过"out of range"字符串的xref信息找到对应的判断输入的功能代码
 
 ![字符串的xref信息](../images/屏幕截图%202026-11-12%20211157.png)
 
 ![判断输入的功能代码](../images/屏幕截图%202026-11-12%20211245.png)
 
-7.进一步分析factorial_stripped.exe(去除符号后的版本),发现自动分析后并没有自动跳转到主函数，同时出现了很大变化,根据上一步通过字符串找入口的操作成功找到主函数入口
+7. 进一步分析factorial_stripped.exe(去除符号后的版本),发现自动分析后并没有自动跳转到主函数，同时出现了很大变化,根据上一步通过字符串找入口的操作成功找到主函数入口
 
 ![factorial_stripped.exe初始界面](../images/屏幕截图%202026-11-12%20211620.png)
 
